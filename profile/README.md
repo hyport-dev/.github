@@ -1,19 +1,17 @@
 ## hyport
 
-K8s-native Hosting-Plattform für Gameserver. Ein Server, der startet, erreichbar ist und
-bei Node-Ausfall in unter einer Minute mit gleicher IP und gleichem Port wieder läuft –
-bei höchstens Sekunden Datenverlust.
+Kubernetes-native hosting for game servers. A server that starts, is reachable, and after a
+node failure comes back in under a minute on the same IP and port — losing at most seconds of data.
 
-Nachfolger im Geist von Pterodactyl, aber kein Fork und keine Kopie: eigener Code,
-eigenes Modell.
+A successor in spirit to Pterodactyl, but not a fork and not a copy: own code, own model.
 
-### Was es ausmacht
+### What sets it apart
 
-- **Failover über Nodes hinweg** – die Allocation (IP:Port) bleibt, der Spieler verbindet sich zur selben Adresse.
-- **Kontinuierliche, verschlüsselte ZFS-Replikation** auf eine kalte Peer-Kopie auf einer anderen Node.
-- **Self-Healing als Pflicht** – jeder mehrstufige Ablauf bekommt Deadline, Stuck-Erkennung und sichere Auto-Reparatur, oder meldet klar.
-- **Technische Steuerebene** – kein Billing, kein Shop; Verkaufsportale sprechen die API an.
+- **Failover across nodes** — the allocation (IP:port) stays, players reconnect to the same address.
+- **Continuous encrypted ZFS replication** to a cold peer copy on another node.
+- **Self-healing by default** — every multi-step flow gets a deadline, stuck detection and safe auto-repair, or reports clearly.
+- **A technical control plane** — no billing, no shop; sales portals talk to the API.
 
 ### Status
 
-In aktiver Entwicklung, noch kein öffentliches Release.
+In active development, no public release yet.
